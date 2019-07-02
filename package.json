@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve": "concurrently \"ng serve\" \"tsc server/server.ts\" \"nodemon server/server.js\""
+    "serve": "concurrently \"ng serve\" \"tsc server/server.ts --outDir server/dist\" \"nodemon server/dist/server.js\""
   },
   "private": true,
   "dependencies": {

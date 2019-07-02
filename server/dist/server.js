@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
         res.sendStatus(200);
     }
     else {
-        console.log("IP: " + req.ip + "\nMETHOD: " + req.method + "\nURL: " + req.url);
+        console.log("IP: " + req.ip + "\nMETHOD: " + req.method + "\nURL: " + req.url + "\n----------------------");
         next();
     }
 });
